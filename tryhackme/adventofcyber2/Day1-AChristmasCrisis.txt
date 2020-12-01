@@ -1,0 +1,24 @@
+# Notes
+# Any site can set cookies with a variety of properties -- the most important of these for today's task are the name and value of the cookies, both of which will always be set. It's worth noting that a site can only access cookies that are associated with its own domain (i.e. google.com can't access any cookies stored by tryhackme.com, and vice versa).
+
+1 - Visit website, register an account, and login:
+user: rudolph
+password: santa
+
+2 - What is the name of the cookie used for authentication?
+Open the dev tools in the browser and go to storage->cookies
+name: auth
+
+3 - In what format is the value of this cookie encoded?
+hexadecimal
+
+4 - Having decoded the cookie, what format is the data stored in?
+JSON
+
+5 - What is the value of Santa's cookie?
+Copy the cookie value into a hex decoder, edit the username to "santa", and re-encode it.
+7B22636F6D70616E79223A22546865204265737420466573746976616C20436F6D70616E79222C2022757365726E616D65223A2273616E7461227D
+Then refresh the page, and you are the santa user.
+
+6 - What is the flag you're given when the line is fully active?
+THM{*omitted*}
